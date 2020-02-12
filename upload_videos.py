@@ -1,4 +1,5 @@
 """ Archive.org video uploader. """
+from __future__ import print_function
 
 import sys
 import os
@@ -63,13 +64,13 @@ class Video(object):
 def upload_video(v, **kw):
     """ Upload a video. """
 
-    print "Uploading %s ... [%s]" % (v.path, v.identifier)
-    print ""
-    print "  Metadata"
-    print "  --------"
+    print("Uploading %s ... [%s]" % (v.path, v.identifier))
+    print()
+    print("  Metadata")
+    print("  --------")
     md = v.metadata
     for key in sorted(md.keys()):
-        print "  %r: %r" % (key, md[key])
+        print("  %r: %r" % (key, md[key]))
 
     item = ia.get_item(v.identifier)
     item.upload(v.path, metadata=md, **kw)
@@ -95,6 +96,8 @@ def main(args):
     access_key, secret_key = ia_access_tokens()
     for v in conf.videos:
         if not v.upload:
+            continue
+        if v.done:
             continue
         upload_video(v, access_key=access_key, secret_key=secret_key,
                      verbose=options.verbose)
