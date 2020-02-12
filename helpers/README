@@ -1,0 +1,12 @@
+PyConZA internet archive upload helpers
+=======================================
+
+convert_youtube_yml_to_videos_yml.py
+------------------------------------
+
+This script converts the Debian youtube upload yml file into a suitable videos.yml file.
+
+This is not very robust, and there are a lot of assumptions about how the
+description in the youtube.yml file is structured and the hardcoded defaults
+for the metadata are very specific to PyConZA. Check the output of this
+script carefully, but it should be an acceptable starting point.

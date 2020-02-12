@@ -28,6 +28,9 @@ You can test uploads to check for issues with the metadata by changing the
 collection to "test_collection" - these are only kept for 30 days, but be sure
 to use the "PyConZA" collection for the final upload.
 
+The helpers directory contains various scripts for helping massage existing
+data into a suitable videos.yml file. See helpers/README for details.
+
 
 Resources
 ---------
