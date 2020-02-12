@@ -1,0 +1,22 @@
+folder: "<somewhere>"
+
+default_metadata:
+    mediatype: "movies"
+    licenseurl: "http://creativecommons.org/licenses/by/3.0/"
+    language: "eng"
+    collection: "pyconza"
+    subject: "pyconza; pyconza2019; python"
+
+videos:
+
+# Closing
+
+  - filename: "CLOSING.mp4"
+    done: false
+    upload: true
+    identifier: "closing"
+    metadata:
+        title: "PyConZA 2019: Closing Remarks"
+        creator: "An Organiser"
+        description: "PyConZA 2019 closing remarks."
+        date: "2019-10-03"

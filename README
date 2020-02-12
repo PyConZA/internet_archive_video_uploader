@@ -1,0 +1,29 @@
+PyConZA InternetArchive.org Upload Scripts
+------------------------------------------
+
+Installation
+------------
+
+* 'pip install -r requirements.txt'
+
+Instructions
+------------
+
+The file 'videos.yaml' describes the files to be uploaded.
+
+  * Set 'folder: <path-to-the-video-files>'.
+  * Set 'upload: true' for any videos you wish to upload.
+
+Set up your access tokens using 'export
+IAS3_TOKEN=<access-token>:<secret-key>'. You can find these tokens at
+https://archive.org/account/s3.php after logging in.
+
+Then run 'python upload_videos.py'.
+
+
+Resources
+---------
+
+* https://github.com/kngenie/ias3upload (useful list of relevant metadata fields)
+* http://archive.org/help/abouts3.txt (canonical documentation on Internet Archive S3 interface)
+* https://archive.org/account/s3.ph
