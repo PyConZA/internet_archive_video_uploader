@@ -20,6 +20,14 @@ https://archive.org/account/s3.php after logging in.
 
 Then run 'python upload_videos.py'.
 
+By default, new uploads are added to the "Community Videos" unless the
+collection is set in the default_metadata section. PyConZA videos
+should be uploaded to the 'PyConZA' collection.
+
+You can test uploads to check for issues with the metadata by changing the
+collection to "test_collection" - these are only kept for 30 days, but be sure
+to use the "PyConZA" collection for the final upload.
+
 
 Resources
 ---------
