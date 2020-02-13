@@ -10,7 +10,7 @@ def convert_yaml(youtube_yaml):
     output['default_metadata'] = {'mediatype': 'movies',
                                   'licenseurl': "http://creativecommons.org/licenses/by/3.0/",
                                   'language': "eng",
-                                  'collection': 'PyConZA',
+                                  'collection': 'pyconza',
                                   'subject': "pyconza; pyconza2019; python"}
     videos = []
     output['videos'] = videos
