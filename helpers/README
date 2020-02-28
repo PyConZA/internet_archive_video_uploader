@@ -10,3 +10,14 @@ This is not very robust, and there are a lot of assumptions about how the
 description in the youtube.yml file is structured and the hardcoded defaults
 for the metadata are very specific to PyConZA. Check the output of this
 script carefully, but it should be an acceptable starting point.
+
+
+fix_metafata.py
+---------------
+
+A script that parses a list of internet achive urls, and replaces any
+'https://za.pycon.org/' urls with a year-specific site url. Used
+to fix talks uploaded by vepyer with incorrect metadata.
+
+It also sets the added_date field (used by IA's sort and search functionality) to
+the public date, to fix issues with year filters not working correctly.
