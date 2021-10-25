@@ -12,7 +12,7 @@ for the metadata are very specific to PyConZA. Check the output of this
 script carefully, but it should be an acceptable starting point.
 
 
-fix_metafata.py
+fix_metadata.py
 ---------------
 
 A script that parses a list of internet achive urls, and replaces any
