@@ -32,6 +32,22 @@ to use the "pyconza" collection for the final upload.
 The helpers directory contains various scripts for helping massage existing
 data into a suitable videos.yml file. See helpers/README for details.
 
+Uploading from YouTube
+----------------------
+
+If your videos are currently in a YouTube playlist, you can download them
+using yt-dlp and then generate a 'videos.yaml' file as follows:
+
+  * Install yt-dlp by following the instructions at
+    https://github.com/yt-dlp/yt-dlp.
+
+  * Run 'yt-dlp --write-description --write-info-json --restrict-filenames
+    <youtube-playlist-id-or-url>'
+
+  * Run './yt-to-yaml.py -y <year> -o pyconza-<year>.yaml yt/*.info.json'
+
+Check the generated file carefully, rename it to 'videos.yaml' and then run
+'python upload_videos.py' as usual.
 
 Resources
 ---------
